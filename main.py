@@ -1,11 +1,14 @@
-import os
+import asyncio
+import logging
 
-from dotenv import dotenv_values, load_dotenv
+from telegram import start
+
+logging.basicConfig(level=logging.INFO)
 
 
-def main():
-    load_dotenv()
+async def main():
+    await start()
 
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
