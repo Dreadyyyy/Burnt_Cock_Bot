@@ -6,7 +6,7 @@ from telegram import start
 logging.basicConfig(level=logging.INFO)
 
 
-async def main():
+async def main() -> None:
     await start()
 
 
